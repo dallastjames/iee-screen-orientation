@@ -24,6 +24,11 @@
     </p>
   </div>
 
-  <ion-button color="primary" (click)="lock()">Lock</ion-button>
-  <ion-button color="secondary" (click)="unlock()">Unlock</ion-button>
+  <ion-button color="primary" (click)="lock('portrait')">
+    Lock Portrait
+  </ion-button>
+  <ion-button color="secondary" (click)="lock('landscape')">
+    Lock Landscape
+  </ion-button>
+  <ion-button color="danger" (click)="unlock()"> Unlock </ion-button>
 </ion-content>

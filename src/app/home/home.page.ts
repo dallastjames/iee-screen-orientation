@@ -9,8 +9,8 @@ import { ScreenOrientation } from "@ionic-enterprise/screen-orientation/ngx";
 export class HomePage {
   constructor(private screen: ScreenOrientation) {}
 
-  public lock() {
-    this.screen.lock("portrait");
+  public lock(style: string) {
+    this.screen.lock(style);
   }
 
   public unlock() {
